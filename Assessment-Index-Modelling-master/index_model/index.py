@@ -9,7 +9,7 @@ class IndexModel:
         Import data
         """
         #import the stock price as DataFrame, set date as index
-        self.data = pd.read_csv("data_sources/stock_prices.csv", index_col=0)
+        self.data = pd.read_csv("Assessment-Index-Modelling-master/data_sources/stock_prices.csv", index_col=0)
         #modify the index type to datetime.
         self.data.index = pd.to_datetime(self.data.index, format='%d/%m/%Y')
 
